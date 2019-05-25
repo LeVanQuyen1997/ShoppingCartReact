@@ -1,0 +1,54 @@
+App
+    Header
+    Product
+        ProductItem
+        ProductItem
+        ProductItem
+
+    Message
+    Cart
+        CartItem
+        CartItem
+        CartItem
+        CartItem
+        CartResult
+    Footer
+ở đây ta thực hiện các thao tác
+như kết nối redux
+tạo ra các file action,reducers,constant
+--note1 điều quan trong được học ở đây là
+cái container là thằng chịu trách nhiệm xử lý việc nhận
+props hay dữ liệu từ store để nó nhả lại cho các component
+h đây component chỉ việc hiển thị view ra ngoài thông qua cái props nhận dc
+
+--note 2
+khi mà mình for hay nói cách khác là duyệt thì phần tử result phải có key
+--note 3 
+một dạng truyền dữ liệu khác thông qua props đó là children
+có nghĩa là có thể truyền cho nó 1 function và function đó có return về nội
+dung mà component cần
+ví dụ:
+    <product>
+        {this.showproduct(product)}
+    </product>
+    cái này là tại container
+    và tại component nó sẽ nhận là với props như sau
+    this.props.children oke
+
+---note 4
+khi lam viec voi gio hang
+dieu dau tien la phai co thong bao 
+nen phai tao ra 1 constant message de quan ly thong bao
+va khi moi vao se co thong bao 'chua co san pham trong gio hang'
+---note 5
+phai tao cartcontainer de no lam viec lay du lieu tu store
+tiep den cung lam nhu tren la check proptype
+show cartitem va dung thang children de show
+tiep den la nho that ki la cho tinh toan nen tao ra 1 function de no giai quyet oke
+---note 6 
+luc ma tao cai cartresult cung truyen cho no cai children mang cartcontainer
+de resultcart nhan dc cai cart luc do thi cu for
+---note 7
+la khi change message thi cung la tai action voi cai constant la changemessage
+va luu y cai  message chi thay doi khi click vao cart nen cai dispatcher se do
+thang cartcontainer quan ly

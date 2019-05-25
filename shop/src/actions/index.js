@@ -1,0 +1,27 @@
+import * as types from './../constant/ActionTypes';
+export const addToCart=(product,quantity)=>{
+    return{
+        type:types.ADD_TO_CART,
+        product,
+        quantity
+    }
+}
+export const deleteProductInCart=(product)=>{
+    return{
+        type:types.DELETE_PRODUCT_IN_CART,
+        product
+    }
+}
+export const changeMessage=(message)=>{
+    return{
+        type:types.CHANGE_MESSAGE,
+        message
+    }
+}
+export const updateCart=(product,quantity)=>{
+    return{
+        type:types.UPDATE_PRODUCT_IN_CART,
+        product,
+        quantity
+    }
+}

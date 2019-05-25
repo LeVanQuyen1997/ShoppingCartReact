@@ -1,0 +1,150 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*Header*/
+.header h1{
+  font-family:  monospace;
+  font-weight: 500;
+  text-shadow: 2px 2px 1px #61dafb;
+  cursor: pointer;
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-align: center;
+}
+.header h1:hover{
+  color:red;
+}
+/*Products*/
+.product h3{
+  cursor: pointer;
+  text-align: center;
+}
+.product h3:after{
+  content: '';
+  width: 200px;
+  height: 2px;
+  background: green;
+  display: block;
+  margin: auto;
+  margin-top:10px;
+  box-shadow: 2px 2px 5px green;
+}
+.prItem{
+  display: flex;
+  overflow: hidden;
+}
+.item{
+  margin:0 5px;
+  width: 300px;
+  margin-top:50px;
+  cursor: pointer;
+  transition: all .3s ease-in;
+  border-radius: 4px;
+  box-shadow: 0 0 4px green;
+}
+.item img{
+  width: 100%;
+}
+.item .prRating{
+  text-align: center;
+  list-style: none;
+}
+.item .prRating li{
+  height: 30px;
+  width: 30px;
+  margin:0 3x;
+  text-align: center;
+  line-height: 30px;
+  display: inline-block;
+}
+.item .prFooter{
+  padding:0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.item .prFooter .prPrice{
+  text-align: center;
+  line-height: 40px;
+}
+.item .prFooter .prAdd i{
+  font-size: 40px;
+  color:green;
+}
+
+
+.message{
+  margin-top:50px; 
+  text-align: left;
+}
+
+/*Cart*/
+.Cart{
+  margin-top:50px;
+}
+.Cart .CartItem .header-item-cart{
+  display: flex;
+  flex-direction: row;
+} 
+.header-item-cart .itemheader{
+  width: 500px;
+}
+.body-item-cart {
+  margin-top:30px;
+}
+.body-item-cart .itemcart{
+  display: flex;
+}
+.body-item-cart .itemcart .cartbody{
+  width: 500px;
+}
+.prTitile,.prDes{
+  text-align: center;
+}
+.prRating .yellow{
+  color:orangered;
+}
+.body-item-cart .cartQuantity{
+  display: flex;
+  justify-content: flex-start;
+}
+.body-item-cart .cartQuantity p{
+  border:1px soli #000;
+  cursor: pointer;
+  font-size: 20px;
+  margin:0 10px;
+}
+.body-item-cart .itemcart .cartbody label{
+  cursor: pointer;
+}
+.CartResult .resultCart{
+  display: flex;
+  justify-content:flex-end;
+}
+.CartResult .resultCart p{
+  margin:0 40px;
+}
+.CartResult .resultCart p:nth-child(1){
+  line-height: 40px;
+}
+.CartResult .resultCart p:nth-child(2){
+  line-height: 40px;
+}
+.CartResult .resultCart .continute{
+  cursor: pointer;
+  padding:10px 30px;
+  background: green;
+  border-radius: 5px;
+  color:white;
+  font-weight: 600;
+}
+.CartResult .resultCart .continute i{
+  transition: all .5s ease;
+}
+.CartResult .resultCart .continute:hover i{
+  transform: translateX(20px);
+}
+.footer{
+  text-align: center;
+  margin-top:50px;
+}
