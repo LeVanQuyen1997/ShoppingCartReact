@@ -4,7 +4,6 @@ class Cart extends React.Component {
 
     render() {
         var {children}=this.props;
-        localStorage.removeItem('CART');
         return (
             <div className="Cart">
                 <div className="container">
